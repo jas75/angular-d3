@@ -38,7 +38,6 @@ export class BarComponent implements OnInit {
     .attr("transform", "translate(" + this.margin + "," + this.margin + ")");
   }
 
-
   private drawBars(data: any[]): void {
     // Create the X-axis band scale
     const x = d3.scaleBand()
