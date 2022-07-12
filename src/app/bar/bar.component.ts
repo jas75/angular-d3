@@ -25,7 +25,8 @@ export class BarComponent implements OnInit {
 
   ngOnInit(): void {
     this.createSvg();
-    this.drawBars(this.data);
+    // this.drawBars(this.data);
+    d3.csv("/assets/frameworks.csv").then(data => this.drawBars(data));
   }
 
   private createSvg(): void {
